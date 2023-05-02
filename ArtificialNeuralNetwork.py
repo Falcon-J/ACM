@@ -20,8 +20,7 @@ model.add(Dense(100, input_shape=(4,), activation="relu"))
 model.add(Dense(3, activation='softmax'))
 
 # Compile the Model
-model.compile(optimizer="adam",
-              loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+model.compile(optimizer="adam",loss="sparse_categorical_crossentropy", metrics=["accuracy"])
 
 # Fit the Model
 history = model.fit(x_train, y_train, epochs=20)
